@@ -8,15 +8,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var title = "Food Service Inspections";
-            var category = "health-and-human-services";
-            var description = "Data on inspections of food establishments licensed in Arlington.Each row of data represents an inspection and any specific violation that may have been cited.";
-            var guid = "FOOD-SERVI-INSPE";
-            var extension = ".xlsx";
+            var title = "Test Upload 123";
+            var category = "government";
+            var description = "Testing upload";
+            var guid = "TEST-UPLOA-123";
+            var extension = ".csv";
 
-            var path = "c:\\Users\\atran\\Desktop\\Quarterly Food Data FY19 Q1.xls";
-            var memoryStream = new MemoryStream(File.ReadAllBytes(path));
-            var data = memoryStream.ToArray();
+            var path = "c:\\Users\\atran\\Desktop\\testuploadinspections.csv";
+            var data = File.ReadAllBytes(path);
 
             Console.WriteLine("press return to run");
             Console.ReadKey();
